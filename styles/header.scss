@@ -1,0 +1,100 @@
+.header {
+  background: linear-gradient(45deg, rgb(52,93,125) 20%, rgb(52,152,219) 80%);
+  background-image: url("../img/bg-orange-form.png");
+  padding-top: 48px;
+
+  &__top-side {
+    margin-bottom: 35px;
+  }
+
+  // .header::before {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  // }
+
+  .tel-numb,
+  .address {
+    font-size: 27px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tel-numb {
+    font-weight: 500;
+  }
+
+  h1, h2 {
+    white-space: pre-wrap;
+  }
+  
+  h1 {
+    line-height: 40px;
+    font-size: 35px;
+    margin-top: 105px;
+    margin-bottom: 30px;
+    
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 65px;
+  }
+
+  &__steps {
+    
+    .step {
+      margin-bottom: 30px;
+
+      .icon-number {
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 55px;
+
+        color: #f1c40f;
+        margin-right: 10px;
+      }
+
+      .step-text {
+        font-size: 16px;
+
+      }
+    }
+  }
+}
+
+.menu {
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    margin-right: 60px;
+
+    a {
+      font-size: 29px;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.btn-header {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.man-background {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  img {
+    max-height: 730px;
+  }
+}

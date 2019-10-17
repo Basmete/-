@@ -1,0 +1,38 @@
+@import "header";
+@import "reasons-to-choose";
+@import "diagnostic";
+@import "contacts";
+@import "footer";
+@import "popups";
+
+body {
+  color: #fff;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.container-fluid {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.btn {
+  color: #fff;
+  background-color: #f1c40f;
+  padding: 20px;
+  font-size: 22px;
+}
+

@@ -1,0 +1,211 @@
+.reasons-to-choose {
+  padding-top: 40px;
+
+  .row-1 {
+    margin-bottom: 100px;
+  }
+
+  .row-2 {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20%;
+      left: 42.5%;
+      width: 275px;
+      height: 80px;
+      background-image: url("../img/LOGO4.png");
+      background-repeat: no-repeat;
+    }
+
+    .man-reason {
+      
+
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 31%;
+        z-index: -1;
+      }
+    }
+  }
+
+  h2 {
+    color: #000;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .h2-reason {
+    margin-bottom: 100px;
+  }
+
+  .h2-review {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+
+  &__item {
+    color: #000;
+    font-size: 17px;
+    border: 5px dashed black;
+    border-radius: 10px;
+    height: 250px;
+    padding: 50px 55px;
+
+    &__header {
+      font-weight: 700;
+      font-size: 26px;
+    }
+
+    .main-text {
+      font-size: 26px;
+      line-height: 1;
+    }
+
+    .extra-text {
+      font-size: 26px;
+      color: #f1c40f;
+      line-height: 1;
+    }
+  }
+}
+
+.reasons-to-choose__item {
+  position: relative;
+  border: 10px dashed black;
+  border-radius: 10px;
+  background-color: white;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 13px;
+    width: 35px;
+    height: 35px;
+    background: url(../icons/point.png) no-repeat;
+    background-size: contain;
+    background-color: white;
+    background-position: 50% 0;
+  }
+
+  &.item-1 {
+    &::before {
+      top: -40px;
+      background: url(../icons/choices.png) no-repeat;
+      background-color: white;
+      background-size: contain;
+    }
+  }
+
+  &.item-2 {
+    &::before {
+      background: url(../icons/manager.png) no-repeat;
+      background-color: white;
+      background-size: contain;
+    }
+  }
+
+  &.item-3 {
+    &::before {
+      background: url(../icons/icon1.png) no-repeat;
+      background-color: white;
+      background-size: contain;
+    }
+  }
+
+  &.item-4 {
+    &::before {
+      background: url(../icons/rent-a-car.png) no-repeat;
+      background-color: white;
+      background-size: contain;
+    }
+  }
+}
+
+//Кнопки для переключения отзыва
+
+.btn-cont {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px  solid #3498db;
+    border-radius: 50%;
+    background-color: #3498db;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}
+
+.review__item {
+  background-color: #348bc7;
+  max-height: 440px;
+
+  &__image {
+    padding: 0;
+    background-color: red;
+    background-position: 0% 0;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-image: url("../img/review-1.png");
+
+    &.image-1 {
+      background-image: url("../img/review-1.png");
+    }
+
+    &.image-2 {
+      background-image: url("../img/2-review.jpg");       
+    }
+
+    &.image-3 {
+      background-image: url("../img/3-review.jpg");
+       
+    }
+
+    &.image-4 {
+      background-image: url("../img/4-review.jpg");  
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    padding: 95px 45px;
+    font-size: 15px;
+    line-height: 1.55;
+
+    &__author {
+      font-weight: 700;
+    }
+  }
+}

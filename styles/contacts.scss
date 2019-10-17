@@ -1,0 +1,120 @@
+.contacts {
+  color: black;
+  padding: 60px 0 70px 0;
+
+  .email {
+    font-size: 31px;
+    margin-bottom: 35px;
+  }
+
+  &__address {
+    font-size: 31px;
+
+    &.second {
+      margin-bottom: 30px;
+    }
+  }
+
+  .bordered-container {
+    position: relative;
+    border: 7px dashed black;
+    border-radius: 30px;
+    padding-top: 45px;
+    padding-bottom: 115px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 55px;
+      bottom: 0;
+      left: 0;
+      background: url(../img/yellow_car.svg) no-repeat;
+      background-size: contain;
+      animation-name: rotate;
+      animation-duration: 6s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: translateX(850px);
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      right: 150px;
+      width: 40px;
+      height: 70px;
+      
+      background: url(../icons/point.png) no-repeat;
+      background-color: white;
+      background-size: cover;
+    }
+  } 
+
+  &__info {
+    padding-left: 80px;
+
+    &__header {
+      font-size: 71px;
+      font-weight: 700;
+      margin-bottom: 35px;
+    }
+
+    &__icons {
+      margin-bottom: 35px;
+
+      &__icon {
+        width: 66px;
+        height: 66px;
+        margin-right: 25px;
+        background-size: 150% 150%;
+        background-position: 50% 50%;
+        
+
+        &.icon-1 {
+          background-image: url("../icons/telephone.svg");
+        }
+
+        &.icon-2 {
+          background-image: url("../icons/telegram.svg");
+        }
+
+        &.icon-3 {
+          background-image: url("../icons/whatsapp.svg");
+        }
+      }
+    }
+
+    .telnumb {
+      position: relative;
+      font-size: 30px;
+      font-weight: 300;
+      max-width: 260px;
+      
+      &.second {
+        margin-bottom: 30px;
+      }
+
+
+      &::before {
+        display: block;
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: black;
+        bottom: 7px;
+        left: 0;
+      }
+    }
+  }
+}
+
+.btn-contacts {
+  min-width: 345px;
+}
