@@ -1,4 +1,5 @@
 .diagnostic {
+  position: relative;
   background-color: #348bc7;
   padding-top: 208px;
 
@@ -22,10 +23,10 @@
       bottom: -15px;
       background-color: #34495e;
       padding-top: 95px;
-      min-width: 520px;
       min-height: 420px;
       padding-left: 45px;
       border-radius: 5px;
+      width: 50%;
 
       p {
         font-size: 28px;
@@ -42,17 +43,21 @@
 
   .bmw {
     position: relative;
+    width: 100%;
 
     img {
+      width: 100%;
       position: absolute;
       top: 10%;
       left: 12%;
     }
 
     .logo-skewed {
+      width: 100%;
+      height: 100%;
       position: absolute;
-      top: 30%;
-      left: 72%;
+      left: 60%;
+      top: 20%;
     }
   }
 }
@@ -78,7 +83,10 @@
   &__item {
     border-radius: 10px;
     background-color: #fff;
-    padding: 65px 50px 60px 50px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-left: 45px;
+    
 
     img {
       width: 175px;
@@ -86,6 +94,7 @@
     }
 
     &__text {
+      padding: 65px 50px 60px 50px;
       color: black;
       padding-left: 25px;
       font-size: 20px;
@@ -114,6 +123,7 @@
     border-radius: 10px;
     padding-bottom: 35px;
     padding-top: 30px;
+    margin-bottom: 20px;
 
     &__image {
       width: 100%;

@@ -1,3 +1,18 @@
+#abcdef {
+  position: relative;
+}
+#abcdef::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 250px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../icons/phone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header {
   background: linear-gradient(45deg, #345d7d 20%, #3498db 80%);
   background-image: url("../img/bg-orange-form.png");
@@ -6,6 +21,9 @@
 .header__top-side {
   margin-bottom: 35px;
 }
+.header__top-side .logo img {
+  width: 100%;
+}
 .header .tel-numb,
 .header .address {
   font-size: 27px;
@@ -13,6 +31,7 @@
   margin: 0;
 }
 .header .tel-numb {
+  position: relative;
   font-weight: 500;
 }
 .header h1, .header h2 {
@@ -90,6 +109,7 @@
   height: 80px;
   background-image: url("../img/LOGO4.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .reasons-to-choose .row-2 .man-reason img {
   position: absolute;
@@ -105,10 +125,12 @@
 }
 .reasons-to-choose .h2-reason {
   margin-bottom: 100px;
+  line-height: 1.5;
 }
 .reasons-to-choose .h2-review {
   margin-top: 75px;
   margin-bottom: 75px;
+  line-height: 1.5;
 }
 .reasons-to-choose__item {
   color: #000;
@@ -117,6 +139,7 @@
   border-radius: 10px;
   height: 250px;
   padding: 50px 55px;
+  margin-bottom: 50px;
 }
 .reasons-to-choose__item__header {
   font-weight: 700;
@@ -203,12 +226,12 @@
 
 .review__item {
   background-color: #348bc7;
-  max-height: 440px;
+  min-height: 440px;
 }
 .review__item__image {
+  min-height: 440px;
   padding: 0;
-  background-color: red;
-  background-position: 0% 0;
+  background-position: 0% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/review-1.png");
@@ -240,6 +263,7 @@
 }
 
 .diagnostic {
+  position: relative;
   background-color: #348bc7;
   padding-top: 208px;
 }
@@ -262,10 +286,10 @@
   bottom: -15px;
   background-color: #34495e;
   padding-top: 95px;
-  min-width: 520px;
   min-height: 420px;
   padding-left: 45px;
   border-radius: 5px;
+  width: 50%;
 }
 .diagnostic .yellow-box .grey-box p {
   font-size: 28px;
@@ -278,16 +302,20 @@
 }
 .diagnostic .bmw {
   position: relative;
+  width: 100%;
 }
 .diagnostic .bmw img {
+  width: 100%;
   position: absolute;
   top: 10%;
   left: 12%;
 }
 .diagnostic .bmw .logo-skewed {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 30%;
-  left: 72%;
+  left: 60%;
+  top: 20%;
 }
 
 .btn-diagnostic {
@@ -309,13 +337,16 @@
 .benefits__item {
   border-radius: 10px;
   background-color: #fff;
-  padding: 65px 50px 60px 50px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  padding-left: 45px;
 }
 .benefits__item img {
   width: 175px;
   height: 175px;
 }
 .benefits__item__text {
+  padding: 65px 50px 60px 50px;
   color: black;
   padding-left: 25px;
   font-size: 20px;
@@ -340,6 +371,7 @@
   border-radius: 10px;
   padding-bottom: 35px;
   padding-top: 30px;
+  margin-bottom: 20px;
 }
 .category__item__image {
   width: 100%;
@@ -545,6 +577,7 @@ h2 {
   max-width: 950px;
   border-radius: 10px;
   border: 1px solid red;
+  display: none;
 }
 .popup-question h2 {
   font-size: 44px;
@@ -562,6 +595,12 @@ h2 {
 .popup-quiz {
   max-width: 1400px;
   border: 1px solid red;
+  background-color: #fff;
+  position: absolute;
+  z-index: 100;
+  left: 20%;
+  top: 0;
+  display: none;
 }
 .popup-quiz__header {
   padding: 45px 115px 55px 0;
@@ -744,6 +783,235 @@ h1 {
   background-color: #f1c40f;
   padding: 20px;
   font-size: 22px;
+}
+
+@media (max-width: 1824px) {
+  #reasons-to-choose-item .reasons-to-choose__item__header {
+    font-size: 20px;
+  }
+  #reasons-to-choose-item .main-text {
+    font-size: 20px;
+  }
+  #reasons-to-choose-item .extra-text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1440px) {
+  #man-background-header {
+    left: 0;
+  }
+}
+#white-nigger {
+  color: #fff;
+}
+
+@media (max-width: 1258px) {
+  #reasons-to-choose-item .reasons-to-choose__item__header {
+    font-size: 18px;
+  }
+  #reasons-to-choose-item .main-text {
+    font-size: 18px;
+  }
+  #reasons-to-choose-item .extra-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  #contacts-text {
+    font-size: 23px;
+  }
+
+  #map {
+    width: 100%;
+    height: 90%;
+  }
+
+  #category .category__item__header {
+    font-size: 24px;
+  }
+  #category .category__item__button .btn {
+    width: 100%;
+  }
+
+  #diagnostic-card .yellow-box .grey-box {
+    width: 70%;
+    left: -30px;
+    top: 190px;
+  }
+  #diagnostic-card .yellow-box .grey-box p {
+    font-size: 20px;
+  }
+
+  #man-background-header {
+    right: 0;
+  }
+  #man-background-header img {
+    width: 450px;
+  }
+
+  #header .menu__item {
+    margin-right: 10px;
+  }
+  #header .menu__item a {
+    font-size: 16px;
+  }
+
+  #header-logo {
+    top: 40%;
+  }
+  #header-logo img {
+    width: 100%;
+  }
+
+  #reasons-to-choose .row-2::before {
+    left: 34%;
+    top: -120px;
+  }
+  #reasons-to-choose .reasons-to-choose__item {
+    height: 300px;
+  }
+
+  #man-reason img {
+    left: 30%;
+    bottom: 50px;
+    width: 40%;
+  }
+}
+#orderr {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  #bmw-container {
+    display: none;
+  }
+
+  #man-background-header {
+    display: none;
+  }
+
+  #header-logo {
+    text-align: center;
+  }
+
+  #header-menu {
+    justify-content: center;
+  }
+
+  #man-reason {
+    display: none;
+  }
+
+  #row-2::before {
+    display: none;
+  }
+
+  #magnifier {
+    display: none;
+  }
+
+  #grey-box {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #reasons-to-choose .h2-reason {
+    font-size: 45px;
+  }
+  #reasons-to-choose .h2-review {
+    font-size: 45px;
+  }
+  #reasons-to-choose .reasons-to-choose__item {
+    height: 300px;
+  }
+
+  #map {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 575px) {
+  .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #contacts .contacts__info {
+    padding-left: 10px;
+  }
+  #contacts .contacts__info__header {
+    font-size: 30px;
+  }
+
+  #contacts-text {
+    font-size: 20px;
+    white-space: pre-wrap;
+  }
+
+  #btn-contacts {
+    min-width: 0;
+  }
+
+  #diagnostic-card .yellow-box {
+    margin-left: 0;
+  }
+  #diagnostic-card .yellow-box__header {
+    font-size: 20px;
+  }
+  #diagnostic-card .yellow-box .grey-box {
+    width: 100%;
+    left: 0;
+    top: 190px;
+  }
+  #diagnostic-card .yellow-box .grey-box p {
+    font-size: 15px;
+  }
+
+  #btn-diagnostic {
+    min-width: 0;
+    width: 100%;
+  }
+  #btn-diagnostic .paper {
+    left: 0;
+    bottom: -110px;
+  }
+
+  #benefits .benefits__item {
+    padding-left: 10px;
+  }
+  #benefits .benefits__item__text {
+    font-size: 18px;
+  }
+
+  #footer .logo {
+    width: 100%;
+  }
+
+  #category .category__item__button .btn {
+    width: 100%;
+  }
+
+  #reasons-to-choose .h2-reason {
+    font-size: 45px;
+  }
+  #reasons-to-choose .h2-review {
+    font-size: 45px;
+  }
+  #reasons-to-choose .reasons-to-choose__item {
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #header .tel-numb {
+    font-size: 25px;
+  }
+  #header .address {
+    font-size: 25px;
+  }
+
+  #map {
+    margin-left: 0px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

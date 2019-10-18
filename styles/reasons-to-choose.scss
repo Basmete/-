@@ -17,6 +17,7 @@
       height: 80px;
       background-image: url("../img/LOGO4.png");
       background-repeat: no-repeat;
+      background-size: cover;
     }
 
     .man-reason {
@@ -40,11 +41,13 @@
 
   .h2-reason {
     margin-bottom: 100px;
+    line-height: 1.5;
   }
 
   .h2-review {
     margin-top: 75px;
     margin-bottom: 75px;
+    line-height: 1.5;
   }
 
   &__item {
@@ -54,6 +57,7 @@
     border-radius: 10px;
     height: 250px;
     padding: 50px 55px;
+    margin-bottom: 50px;
 
     &__header {
       font-weight: 700;
@@ -165,12 +169,13 @@
 
 .review__item {
   background-color: #348bc7;
-  max-height: 440px;
+  min-height: 440px;
 
   &__image {
+    min-height: 440px;
     padding: 0;
-    background-color: red;
-    background-position: 0% 0;
+    
+    background-position: 0% 50%;
     background-repeat: no-repeat;
     background-size: cover; 
     background-image: url("../img/review-1.png");

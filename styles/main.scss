@@ -36,3 +36,355 @@ h1 {
   font-size: 22px;
 }
 
+@media (max-width: 1824px) {
+  #reasons-to-choose-item {
+
+    .reasons-to-choose__item__header {
+      font-size: 20px;
+    }
+
+    .main-text {
+      font-size: 20px;
+    }
+
+    .extra-text {
+      font-size: 20px;
+    } 
+  }
+}
+
+@media (max-width: 1440px) {
+  #man-background-header {
+    left: 0;
+  }
+}
+
+#white-nigger {
+  color: #fff;
+}
+@media (max-width: 1258px) {
+  #reasons-to-choose-item {
+
+    .reasons-to-choose__item__header {
+      font-size: 18px;
+    }
+
+    .main-text {
+      font-size: 18px;
+    }
+
+    .extra-text {
+      font-size: 18px;
+    } 
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  // КОНТАКТЫ
+  #contacts-text {
+    font-size: 23px;
+  }
+
+  // КАРТА
+  #map {
+    width: 100%;
+    height: 90%;
+  }
+
+  // КАТЕГОРИИ
+  #category {
+
+    .category__item__header {
+      font-size: 24px;
+    }
+
+    .category__item__button {
+      
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+  // ДИАГНОСТИЧЕСКАЯ КАРТА
+  #diagnostic-card {
+
+    .yellow-box {
+
+      .grey-box {
+        width: 70%;
+        left: -30px;
+        top: 190px;
+               
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  #man-background-header {
+    right: 0;
+
+    img {
+      width: 450px;
+    }
+  }
+
+  // ШАПКА
+  #header {
+
+    .menu__item {
+      margin-right: 10px;
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+
+  #header-logo {
+    
+    top: 40%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  //Раздел ПОЧЕМУ ВЫБИРАЮТ
+  #reasons-to-choose {
+
+    .row-2 {
+
+      &::before {
+        left: 34%;
+        top: -120px;
+      }
+    }
+
+    .reasons-to-choose__item {
+      height: 300px;
+    }
+  }
+
+  #man-reason {
+    
+    img {
+      left: 30%;
+      bottom: 50px;
+      width: 40%;
+      
+    }
+  }
+}
+
+#orderr {
+  display: none;
+}
+
+
+//Убираем картинки людей и машин 
+@media (max-width: 1023px) {
+
+  #bmw-container {
+    display: none;
+  }
+
+  #man-background-header {
+    display: none;
+  }
+
+  #header-logo {
+    text-align: center;
+  }
+  
+  #header-menu {
+    justify-content: center;
+  }
+
+  #man-reason {
+    display: none;
+  }
+
+  #row-2::before {
+    display: none;
+  }
+
+  #magnifier {
+    display: none;
+  }
+
+  #grey-box {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  //Раздел ПОЧЕМУ ВЫБИРАЮТ
+  #reasons-to-choose {
+
+    .h2-reason {
+      font-size: 45px;
+    }
+
+    .h2-review {
+      font-size: 45px;
+    }
+
+    .reasons-to-choose__item {
+      height: 300px;
+    }
+  }
+
+  //Раздел ПРЕИМУЩЕСТВА
+  #benefits {
+
+    .benefits__ravno {
+      
+    }
+
+  }
+
+  //КАРТА
+  #map {
+    margin-left: 70px;
+  }
+}
+
+//Для очень маленьких экранов
+@media (max-width: 575px) {
+
+
+  .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  // Блок КОНТАКТЫ
+  #contacts {
+
+    .contacts__info {
+      padding-left: 10px;
+
+      &__header {
+        font-size: 30px;
+      }
+    }
+  }
+
+  #contacts-text {
+    font-size: 20px;
+    white-space: pre-wrap;
+  }
+
+  #btn-contacts {
+    min-width: 0;
+  }
+  // 
+
+  // Блок Диагностическая карта
+  #diagnostic-card {
+
+    .yellow-box {
+      margin-left: 0;
+
+      &__header {
+        font-size: 20px;
+      }
+
+      .grey-box {
+        width: 100%;
+        left: 0;
+        top: 190px;
+               
+
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  #btn-diagnostic {
+    min-width: 0;
+    width: 100%;
+
+    .paper {
+      left: 0;
+      bottom: -110px;
+    }
+  }
+
+  // Раздел ПРЕИМУЩЕСТВА
+  #benefits {
+
+    .benefits__item {
+      padding-left: 10px;
+
+      &__text {
+        font-size: 18px;
+      }
+    }
+  }
+  //
+
+  //Раздел ПОДВАЛ
+
+  #footer {
+    
+    .logo {
+      width: 100%;
+    }
+  }
+
+  //Раздел КАТЕГОРИИ
+
+  #category {
+    
+    .category__item__button {
+      
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  // Раздел ПОЧЕМУ ВЫБИРАЮТ
+  #reasons-to-choose {
+
+    .h2-reason {
+      font-size: 45px;
+    }
+
+    .h2-review {
+      font-size: 45px;
+    }
+
+    .reasons-to-choose__item {
+      height: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  //Раздел ЗАГОЛОВОК
+  #header {
+
+    .tel-numb {
+      font-size: 25px;
+    }
+
+    .address {
+      font-size: 25px;
+    }
+  }
+
+  #map {
+    margin-left: 0px;
+    
+  }
+
+}
+
